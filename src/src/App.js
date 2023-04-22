@@ -1,19 +1,28 @@
 // import logo from './logo.svg';
 import './styles/App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
 import Guides from './screens/Guides';
+import Home from './pages';
+import Page1 from './pages/page1';
+import Page2 from './pages/page2';
+import Page3 from './pages/page3';
 
 function App() {
   return (
     <div className="App">
+      <Router>
+          <Navbar />
+          <Routes>
+            <Route path='/page1' element={<Page1 />} />
+            <Route path='/page2' element={<Page2 />} />
+            <Route path='/page3' element={<Page3 />} />
+          </Routes>
+        </Router>
       <h1>COME UP WITH NAME</h1>
       <br></br>
-      <BrowserRouter>
-        <Routes>
-          {/* <Route path="/" element={Guides} /> */}
-          <Route path="/" element={ <Guides /> } />
-        </Routes>
-      </BrowserRouter>
+        
+        
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
