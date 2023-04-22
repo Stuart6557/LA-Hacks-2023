@@ -7,14 +7,14 @@ export default function Navbar() {
     <header>
       <div className="navbar">
         <Link to="/">
-          <h2>NAME</h2>
+          <h2>NAVIGATION BAR</h2>
         </Link>
         <nav className="navlinks">
           <Link to="/">
-            <p>Home</p>
+            <h4>Home</h4>
           </Link>
           <Link to="/login">
-            <p>Login / Sign Up</p>
+            <h4>Login / Sign Up</h4>
           </Link>
         </nav>
       </div>

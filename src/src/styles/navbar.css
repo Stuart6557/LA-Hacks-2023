@@ -1,5 +1,6 @@
 header {
-  background: aliceblue;
+  background-color: var(--dark-green);
+  color: var(--light-grey);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -35,4 +36,5 @@ header a:hover {
   border-radius: 13px;
   -webkit-transition: transform 0.25s, 0.25s box-shadow;
   -moz-transition: transform 0.25s, 0.25s box-shadow;
+  color: var(--light-green);
 }
