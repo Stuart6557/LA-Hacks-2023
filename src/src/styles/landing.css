@@ -3,10 +3,8 @@
   color:  #40552A;
   font-size: 2rem;
   height: 90vh;
-}
-
-body{
-    background-image: linear-gradient(to bottom right, #91AC43, #D1D8E2);
+  background-image: linear-gradient(to bottom right, #91AC43, #D1D8E2);
+  padding: 50px;
 }
 
 .header{
