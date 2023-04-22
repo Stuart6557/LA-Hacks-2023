@@ -1,5 +1,15 @@
+:root{
+  /* Palette */
+  --light-grey: #C8C4B9;
+  --dark-green: #40552A;
+  --light-green: #91AC43;
+  --dark-grey: #A3A3A1;
+  --light-blue: #D1D8E2;
+}
+
 header {
-  background: aliceblue;
+  background-color: var(--dark-green);
+  color: var(--light-grey);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -35,4 +45,5 @@ header a:hover {
   border-radius: 13px;
   -webkit-transition: transform 0.25s, 0.25s box-shadow;
   -moz-transition: transform 0.25s, 0.25s box-shadow;
+  color: var(--light-green);
 }
