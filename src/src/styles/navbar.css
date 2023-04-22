@@ -1,12 +1,3 @@
-:root{
-  /* Palette */
-  --light-grey: #C8C4B9;
-  --dark-green: #40552A;
-  --light-green: #91AC43;
-  --dark-grey: #A3A3A1;
-  --light-blue: #D1D8E2;
-}
-
 header {
   background-color: var(--dark-green);
   color: var(--light-grey);
