@@ -1,18 +1,29 @@
 import React from 'react';
   
-const Home = () => {
+const Page1 = () => {
   return (
     <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
     >
-      <h1>Home page</h1>
+      <h1>This is page 1.</h1>
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <h1>consectetur adipiscing elit, sed do</h1>
+      <h1>eiusmod tempor incididunt ut labore</h1>
+      <h1>fugiat nulla pariatur</h1>
+      <br></br><br></br><br></br><br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>fugiat nulla pariatur</h1>
+      <br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br>
+      <h1>fugiat nulla pariatur</h1>
+      <h1>fugiat nulla pariatur</h1>
+      <br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br>
+      <h1>fugiat nulla pariatur</h1>
+      
     </div>
   );
 };
-
-export default Home;
+  
+export default Page1;

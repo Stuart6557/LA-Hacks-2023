@@ -3,10 +3,10 @@ import './styles/App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Guides from './screens/Guides';
-import Home from './pages';
-import Page1 from './pages/page1';
+import Page1 from './pages/index';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import SignIn from './pages/signin';
 
 function App() {
   return (
@@ -14,9 +14,10 @@ function App() {
       <Router>
           <Navbar />
           <Routes>
-            <Route path='/page1' element={<Page1 />} />
+            <Route path='/' element={<Page1 />} />
             <Route path='/page2' element={<Page2 />} />
             <Route path='/page3' element={<Page3 />} />
+            <Route path='/signin' element={<SignIn />} />
           </Routes>
         </Router>
       <h1>COME UP WITH NAME</h1>

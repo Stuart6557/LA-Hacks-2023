@@ -13,7 +13,7 @@ const Navbar = () => {
       <Nav>
         <Bars />
         <NavMenu>
-          <NavLink to='/page1' activeStyle>
+          <NavLink to='/index' activeStyle>
             Page 1
           </NavLink>
           <NavLink to='/page2' activeStyle>
@@ -22,11 +22,9 @@ const Navbar = () => {
           <NavLink to='/page3' activeStyle>
             Page 3
           </NavLink>
-          {/* Second Nav */}
-          {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink to='/signin'>Sign Up / Log In</NavBtnLink>
         </NavBtn>
       </Nav>
   );
