@@ -1,0 +1,45 @@
+<h1>Stuart's site</h1>
+
+<p class="hello">Hello World!</p>
+
+<ul>
+    <li>Bananas</li>
+    <li>Baguettes</li>
+    <li>Bagels</li>
+    <li>Chocolate</li>
+</ul>
+
+<a href="https://www.google.com">Link!</a>
+
+<br />
+
+<img src="LAHacks.svg" id="test" />
+
+<style>
+    body {
+        padding: 3rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: purple;
+    }
+
+    img {
+        width: 25rem;
+    }
+
+    .hello {
+        font-size: 2rem;
+    }
+</style>
+
+<script>
+    console.log("Hello World!");
+
+    let thing = document.getElementById("test");
+
+    thing.addEventListener("click", () => {
+        console.log("clicked");
+    })
+</script>
