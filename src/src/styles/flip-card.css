@@ -1,0 +1,52 @@
+.flip-card {
+  margin-top: 1rem;
+  width: 25vw;
+	min-width: 200px;
+	height: 80vh;
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+.flip-card:hover {
+  transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	-moz-transform: scale(1.02);
+	transition: transform 0.4s, 0.4s box-shadow;
+	border-radius: 13px;
+	-webkit-transition: transform 0.4s, 0.4s box-shadow;
+	-moz-transition: transform 0.4s, 0.4s box-shadow;
+	cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  transition: transform 0.5s ease;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #ebf4ff;
+}
+
+.flip-card-back {
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.flip-card-back.flipped {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.flip-card-front {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.flip-card-front.flipped {
+  transform: perspective(1000px) rotateY(-180deg);
+}
