@@ -1,0 +1,38 @@
+header {
+  background: aliceblue;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5vw 3vw;
+  gap: 10px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vw;
+  font-size: 20px;
+}
+
+header a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header a:hover {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  transition: transform 0.25s, 0.25s box-shadow;
+  border-radius: 13px;
+  -webkit-transition: transform 0.25s, 0.25s box-shadow;
+  -moz-transition: transform 0.25s, 0.25s box-shadow;
+}
