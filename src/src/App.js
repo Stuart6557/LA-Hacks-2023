@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
+import Game from "./screens/Game";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path='/game' element={<Game/>}/>
         </Routes>
       </Router>
     </div>
