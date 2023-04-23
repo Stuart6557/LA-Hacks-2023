@@ -11,7 +11,7 @@
   padding-top: 10px;
 }
 
-button {
+.landing button {
   background-color: var(--dark-green); 
   border: none;
   color: var(--light-grey);
