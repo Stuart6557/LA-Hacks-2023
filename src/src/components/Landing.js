@@ -15,13 +15,25 @@ export default function Landing() {
 				and Earth, many mindful humans, like you, have taken this issue into
 				our own hands. One of the easiest contributions we can all make is 
 				recycling! Done correctly, recycling conserves trees, water, and minerals, 
-				as well as diminishes greenhouse gases and carbon emissions. Learn more 
-				about how to dispose of recycling and nonrecycling properly by joining the
-				green team now!
+				as well as diminishes greenhouse gases and carbon emissions.
 			</p>
-			{!currentUser &&
+      {currentUser == null ?
+        <p>
+          Learn more about how to dispose of recycling and nonrecycling properly
+          by joining the green team now!
+        </p> :
+        <div className="join-section">
+          <br/>
+          <p>
+            Thanks for joining the green team! Scroll down to access our guide
+            or head on over to our mini game.
+          </p>
+        </div>
+      }
+      
+			{currentUser == null &&
 				<Link to="/login">
-					<button classname="login"><b>Login / Sign Up</b></button>
+					<button className="login"><b>Login / Sign Up</b></button>
 				</Link>
 			}
 		</div>

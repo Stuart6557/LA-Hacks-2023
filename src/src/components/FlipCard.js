@@ -20,7 +20,7 @@ export default function FlipCard({title, description, bullet1, bullet2, bullet3,
             <li>{bullet2}</li>
             <li>{bullet3}</li>
           </ul>
-    <br></br>
+          <br/>
           <Link to={link}>
 				    <button ><b>{buttonText}</b></button>
 			    </Link>

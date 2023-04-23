@@ -16,9 +16,12 @@ export default function Navbar() {
           <Link to="/">
             <h4>Home</h4>
           </Link>
-          <Link to="/game">
-            <h4>Mini Game</h4>
-          </Link>
+          {currentUser == null ? 
+            <></> :
+            <Link to="/game">
+              <h4>Mini Game</h4>
+            </Link>
+          }
           {currentUser == null ? 
             <Link to="/login">
               <h4>Login / Sign Up</h4>
