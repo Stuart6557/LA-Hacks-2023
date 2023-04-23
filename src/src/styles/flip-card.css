@@ -73,7 +73,7 @@ h1 {
   font-style: italic;
 }
 
-p {
+.FlipCard p {
   color: #084c16;
   text-align: center;
 }
@@ -85,7 +85,7 @@ ul {
   
 }
 
-button {
+.FlipCard button {
   background-color: #084c16; 
   border: none;
   color: #c8c4b9;
@@ -99,7 +99,7 @@ button {
   border:4px solid #084c16;
 }
 
-button:hover {
+.FlipCard button:hover {
   background-color: #c8c4b9; /* Green */
   color: #084c16;
   border:4px solid #084c16;
