@@ -2,13 +2,14 @@
   text-align: left;
   color:  var(--dark-green);
   font-size: 2rem;
-  height: 90vh;
-  background-image: linear-gradient(to bottom right, #91AC43,#D1D8E2);
+  height: 70vh;
+  /* background-image: linear-gradient(to bottom right, #91AC43,#D1D8E2); */
   padding: 50px;
 }
 
 .header{
-  padding-top: 10px;
+  padding-top: 30px;
+  font-style: normal;
 }
 
 button {
