@@ -35,6 +35,5 @@ export default function FlipCard({title, description, bullet1, bullet2, bullet3,
 			
 			</div>
 		</div>
-
 	);
 }
