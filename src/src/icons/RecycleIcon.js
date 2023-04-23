@@ -3,7 +3,7 @@ import React from 'react';
 export default function RecycleIcon() {
   return (
     <div>
-      <svg width="1000px" height="1000px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <svg height="60rem" viewBox="-30 0 500 500" xmlns="http://www.w3.org/2000/svg">
       <path fill="#084c16" id="path2742" d="m54.962 37.281l17.138-10.262 7.678 14.835c1.855 8.105-8.309 11.079-16.47 10.596l-8.346-15.169z"/>
       <path fill="#084c16" id="path2743" d="m51.067 47.877l-9.013 15.95 9.013 16.173 0.223-6.469h8.235c3.005 0.26 6.899-1.711 8.346-4.573l10.572-19.408c-3.487 3.458-7.971 4.35-13.131 4.35h-13.911l-0.334-6.023z"/>
       <path fill="#084c16" id="path2751" d="m30.928 28.212l-17.269-10.037 9.213-13.93c6.17-5.5589 13.698 1.9041 17.237 9.29l-9.181 14.677z"/>
