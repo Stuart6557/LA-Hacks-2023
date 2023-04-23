@@ -9,7 +9,7 @@ export default function Landing() {
 			<h1 className="header" >Landing Page</h1>
 			<p>idk we can put like an about page or something</p>
 			<Link to="/login">
-				<button classname="login"><b>Login / Sign Up</b></button>
+				<button className="login"><b>Login / Sign Up</b></button>
 			</Link>
 		</div>
 	);

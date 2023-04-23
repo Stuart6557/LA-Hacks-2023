@@ -4,18 +4,34 @@ import email from "./../images/mail.png";
 import pass from "./../images/lock.png";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
+import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function SignUpForm() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 
-	const handleSubmit = () => {
-		console.log("temp");
+	const signUp = () => {
+    if(password===confirmPassword) {
+      createUserWithEmailAndPassword(auth, username, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(`errorCode ${errorCode}`);
+        console.log(`errorMessage ${errorMessage}`);
+      });
+    } else {
+      console.log("passwords don't match!");
+    }
 	}
 
 	return (
-		<form className='form' onSubmit={ handleSubmit }>
+		<form className='form' onSubmit={ signUp }>
       <div className="main">
         <div className="sub-main">
           <div>
