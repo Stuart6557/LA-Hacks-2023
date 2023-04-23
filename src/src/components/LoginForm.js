@@ -2,7 +2,7 @@ import "../styles/login-signup.css";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import profile from "./../images/frog-profile.jpeg";
-import email from "./../images/mail.jpeg";
+import email from "./../images/mail.png";
 import pass from "./../images/lock.png";
 import SignUp from "../screens/SignUp";
 import SignUpForm from "./SignupForm";
@@ -16,57 +16,51 @@ export default function LoginForm() {
 	}
 
 	return (
-		<form className='login-form' onSubmit={ handleSubmit }>
-            <div className="main">
-         <div className="sub-main">
-       <div>
-         <div className="imgs">
-           <div className="container-image">
-           <img src={profile} alt="profile" className="profile"/>
+    <form className='form' onSubmit={ handleSubmit }>
+      <div className="main">
+        <div className="sub-main">
+          <div>
+            <div className="imgs">
+              <div className="container-image">
+                <img src={profile} alt="profile" className="profile"/>
+              </div>
+            </div>
 
-           </div>
-
-
-         </div>
-         <div>
-           <h1>Login Page</h1>
-           <div>
+            <div>
+              <h2>Login</h2>
               <img src={email} alt="email" className="email"/>
               <input
-                type="text" 
-                placeholder="user name" 
+                type="text"
+                placeholder="email" 
                 className="name"
                 onChange={(e) => setUsername(e.target.value)}
                 value={username}
-                />
-           </div>
+              />
+            </div>
 
-           <div className="second-input">
-            <img src={pass} alt="pass" className="email"/>
-            <input
+            <div className="second-input">
+              <img src={pass} alt="pass" className="email"/>
+              <input
                 type="password" 
                 placeholder="password" 
                 className="name"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
-            />
-          </div>
+              />
+            </div>
 
-          <div className="login-button">
-            <button>Sign in</button>
+            <div className="login-button">
+              <button>Sign in</button>
+            </div>
+        
+            <p>Don't have an account?</p>
+        
+            <Link to="/signup" className="sign-up-link">
+              <p>Sign Up</p>
+            </Link>
           </div>
-          
-          <p>or</p>
-          
- 
-        <Link to="/signup" className="sign-up-link">
-            <p>Sign Up</p>
-        </Link>
- 
-         </div>
-       </div>
-     </div>
-    </div>
+        </div>
+      </div>
     </form>
 	);
-}
+};

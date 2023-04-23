@@ -1,7 +1,8 @@
 import "../styles/login-signup.css";
 import profile from "./../images/frog-profile.jpeg";
-import email from "./../images/mail.jpeg";
+import email from "./../images/mail.png";
 import pass from "./../images/lock.png";
+import { Link } from 'react-router-dom';
 import { useState } from "react";
 
 export default function SignUpForm() {
@@ -14,63 +15,56 @@ export default function SignUpForm() {
 	}
 
 	return (
-		<form className='login-form' onSubmit={ handleSubmit }>
-
+		<form className='form' onSubmit={ handleSubmit }>
       <div className="main">
-     <div className="sub-main">
-       <div>
-        <div className="imgs">
-           <div className="container-image">
-           <img src={profile} alt="profile" className="profile"/>
+        <div className="sub-main">
+          <div>
+            <div className="imgs">
+              <div className="container-image">
+                <img src={profile} alt="profile" className="profile"/>
+              </div>
+            </div>
 
-        </div>
+            <h2>Sign Up</h2>
+            <img src={email} alt="email" className="email"/>
+            <input
+              type="text" 
+              placeholder="email" 
+              className="name"
+              onChange={(e) => setUsername(e.target.value)}
+              value={username}
+            />
 
-
-        </div>
-        <div>
-           <h1>Sign Up Page</h1>
-           <div>
-              <img src={email} alt="email" className="email"/>
+            <div className="second-input">
+              <img src={pass} alt="pass" className="email"/>
               <input
-                  type="text" 
-                  placeholder="user name" 
-                  className="name"
-                  onChange={(e) => setUsername(e.target.value)}
-                  value={username}
-                />
-        </div>
+                type="password" 
+                placeholder="password" 
+                className="name"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
+            </div>
 
-        <div className="second-input">
-            <img src={pass} alt="pass" className="email"/>
-            <input
-                  type="password" 
-                  placeholder="password" 
-                  className="name"
-                  onChange={(e) => setPassword(e.target.value)}
-                  value={password}
-            />
-        </div>
+            <div className="second-input">
+              <img src={pass} alt="pass" className="email"/>
+              <input
+                type="password" 
+                placeholder="confirm password" 
+                className="name"
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                value={confirmPassword}
+              />
+            </div>
 
-        <div className="second-input">
-            <img src={pass} alt="pass" className="email"/>
-            <input
-                  type="password" 
-                  placeholder="confirm password" 
-                  className="name"
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  value={confirmPassword}
-            />
-        </div>
-
-          <div className="login-button">
-            <button>Sign Up</button>
+            <div className="login-button">
+              <button>Sign Up</button>
+            </div>
+          
+            <p>Have an account? <Link to="/login" className="sign-up-link">Login</Link></p>
           </div>
-           
- 
-         </div>
-       </div>
-     </div>
-    </div>
+        </div>
+      </div>
     </form>
 	);
-}
+};
