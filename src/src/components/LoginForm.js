@@ -26,7 +26,7 @@ export default function LoginForm() {
               </div>
             </div>
 
-            <div>
+            {/* <div> */}
               <h2>Login</h2>
               <img src={email} alt="email" className="email"/>
               <input
@@ -36,7 +36,7 @@ export default function LoginForm() {
                 onChange={(e) => setUsername(e.target.value)}
                 value={username}
               />
-            </div>
+            {/* </div> */}
 
             <div className="second-input">
               <img src={pass} alt="pass" className="email"/>
