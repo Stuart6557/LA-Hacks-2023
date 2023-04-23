@@ -17,13 +17,18 @@ export default function TrackerCircle() {
   return (
     <div class="track">
       <div>
-      <div class="circle">{recycled}</div>
+        <div class="contain">
+        <div class="circle">{recycled}</div>
+        </div>
+      
+      <div class="trackButtons">
       <div class="circle-add-button">
           <p onClick={handleDecrement}>-</p>
       </div>
       <br></br>
       <div class="circle-add-button">
           <p onClick={handleIncrement}>+</p>
+      </div>
       </div>
 
     <div>

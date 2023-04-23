@@ -23,6 +23,12 @@ export default function Navbar() {
             </Link>
           }
           {currentUser == null ? 
+            <></> :
+            <Link to="/tracker">
+              <h4>Tracker</h4>
+            </Link>
+          }
+          {currentUser == null ? 
             <Link to="/login">
               <h4>Login / Sign Up</h4>
             </Link> :

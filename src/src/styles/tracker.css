@@ -1,22 +1,26 @@
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+}
+
 .circle {
+    /* width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border-radius: 50%; */
     border-radius: 50%;
-    padding: 10px;
     background: white;
-    border: 4px solid black;
+    border: 4px solid var(--dark-green);
     color: var(--light-green);
-    text-align: center;
     font: 100px Arial, sans-serif;
     align-items: center;
     justify-content: center;
     display: flex;
     height: 260px;
     width: 260px;
-}
-
-.main {
-    display: flex;
-    justify-content: right;
-    align-items: center;
 }
 
 .circle-add-button {
@@ -30,6 +34,12 @@
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.trackButtons {
+    display: inline-flex;
+    column-gap: 10px;
+    padding-top: 50px;
 }
 
 .track {
