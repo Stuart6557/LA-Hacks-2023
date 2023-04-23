@@ -3,6 +3,16 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-  align-items: center;
-  height: 90vh;
+	align-items: center;
+	height: 90vh;
+	
+}
+
+.Home {
+	background-image: linear-gradient(to bottom right, #91AC43, #D1D8E2);
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
