@@ -12,7 +12,9 @@ export default function SignUpForm() {
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 
-	const signUp = () => {
+	const signUp = (e) => {
+    e.preventDefault();
+
     if(password===confirmPassword) {
       createUserWithEmailAndPassword(auth, username, password)
       .then((userCredential) => {
@@ -31,7 +33,7 @@ export default function SignUpForm() {
 	}
 
 	return (
-		<form className='form' onSubmit={ signUp }>
+		<form className='form' onSubmit={signUp}>
       <div className="main">
         <div className="sub-main">
           <div>
@@ -74,7 +76,7 @@ export default function SignUpForm() {
             </div>
 
             <div className="login-button">
-              <button>Sign Up</button>
+              <button onClick={signUp}>Sign Up</button>
             </div>
           
             <p>Have an account? <Link to="/login" className="sign-up-link">Login</Link></p>

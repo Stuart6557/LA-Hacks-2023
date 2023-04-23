@@ -11,7 +11,7 @@ export default function LoginForm() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 
-	const signIn = (e) => {
+	const logIn = (e) => {
 		e.preventDefault();
     signInWithEmailAndPassword(auth, username, password)
     .then((userCredential) => {
@@ -27,7 +27,7 @@ export default function LoginForm() {
 	}
 
 	return (
-    <form className='form' onSubmit={signIn}>
+    <form className='form' onSubmit={logIn}>
       <div className="main">
         <div className="sub-main">
           <div>
@@ -61,7 +61,7 @@ export default function LoginForm() {
             </div>
 
             <div className="login-button">
-              <button onClick={signIn}>Sign in</button>
+              <button onClick={logIn}>Sign in</button>
             </div>
         
             <p>Don't have an account?</p>
