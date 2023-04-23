@@ -1,7 +1,9 @@
 .main {
+  height: 70vh;
   text-align: center;
+  display: flex;
   justify-content: center;
-  display: flex; 
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 90px;
   background-color: #e1e3eb;

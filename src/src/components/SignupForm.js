@@ -4,18 +4,46 @@ import email from "./../images/mail.png";
 import pass from "./../images/lock.png";
 import { Link } from 'react-router-dom';
 import { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 
 export default function SignUpForm() {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 
-	const handleSubmit = () => {
-		console.log("temp");
-	}
+  const auth = useAuth();
+
+	// const signUp = (e) => {
+  //   e.preventDefault();
+
+  //   if(password===confirmPassword) {
+  //     createUserWithEmailAndPassword(auth, username, password)
+  //     .then((userCredential) => {
+  //       const user = userCredential.user;
+  //       console.log(user);
+  //     })
+  //     .catch((error) => {
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       console.log(`errorCode ${errorCode}`);
+  //       console.log(`errorMessage ${errorMessage}`);
+  //     });
+  //   } else {
+  //     console.log("passwords don't match!");
+  //   }
+	// }
+
+  const handleSubmit = async (e) => {
+    if(password===confirmPassword) {
+      const user = await auth.signup(username, password);
+      return user;
+    } else {
+      console.log("passwords don't match!");
+    }
+  }
 
 	return (
-		<form className='form' onSubmit={ handleSubmit }>
+		<form className='form' onSubmit={handleSubmit}>
       <div className="main">
         <div className="sub-main">
           <div>
@@ -58,7 +86,7 @@ export default function SignUpForm() {
             </div>
 
             <div className="login-button">
-              <button>Sign Up</button>
+              <Link to="/"><button onClick={handleSubmit}>Sign Up</button></Link>
             </div>
           
             <p>Have an account? <Link to="/login" className="sign-up-link">Login</Link></p>
