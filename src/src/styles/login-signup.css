@@ -18,6 +18,7 @@
   padding-top: 30px;
   border-radius: 60px; 
   background-color: white;
+
 }
 
 .imgs {
@@ -61,10 +62,13 @@ input {
 .name {
   padding-left: 70px;
   font-size: 15px;
+ 
 }
 
 .second-input {
   padding-top: 20px;
+  box-sizing: border-box;
+  max-width: min-content;
 }
 
 .form button {
@@ -93,3 +97,4 @@ a {
 .form button:hover {
   background-color: var(--light-green);
 }
+

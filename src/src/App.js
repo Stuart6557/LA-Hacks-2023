@@ -4,13 +4,14 @@ import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
+import Game from "./screens/Game";
 import Profile from './screens/Profile';
 import AuthProvider from './contexts/AuthContext';
 
 export default function App() {
   return (
-    <AuthProvider>
-      <div className="App">
+    <div className="App">
+      <AuthProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -18,10 +19,11 @@ export default function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/game' element={<Game/>} />
             <Route path='/profile' element={<Profile />} />
           </Routes>
         </Router>
-      </div>
-    </AuthProvider>
+      </AuthProvider>
+    </div>
   );
 };

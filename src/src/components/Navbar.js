@@ -10,11 +10,14 @@ export default function Navbar() {
     <header>
       <div className="navbar">
         <Link to="/">
-          <h2>NAVIGATION BAR</h2>
+          <h2>GREEN GUIDE</h2>
         </Link>
         <nav className="navlinks">
           <Link to="/">
             <h4>Home</h4>
+          </Link>
+          <Link to="/game">
+            <h4>Mini Game</h4>
           </Link>
           {currentUser == null ? 
             <Link to="/login">
