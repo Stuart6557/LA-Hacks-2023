@@ -7,7 +7,7 @@ export default function Navbar() {
     <header>
       <div className="navbar">
         <Link to="/">
-          <h2>NAVIGATION BAR</h2>
+          <h2>GREEN GUIDE</h2>
         </Link>
         <nav className="navlinks">
           <Link to="/">
