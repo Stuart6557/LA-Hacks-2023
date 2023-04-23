@@ -9,25 +9,35 @@ export default function Guides() {
 		<div className="Guides">
 			<FlipCard 
 				title="compost" 
-				description="Compost is decayed organic material used as plant fertilizer."
-				bullet1 = "lalallalllalalalalallalallala"
-				bullet2 = "lalallalalallalallallalallala"
-				bullet3 = "lalallalaallalalaallalalallaa"
-				icon={<CompostIcon />}></FlipCard>
+				description="Compost is decayed organic material used as plant fertilizer. This includes:"
+				bullet1 = "food scraps"
+				bullet2 = "soiled uncoated paper"
+				bullet3 = "noncoated paper plates"
+				icon={<CompostIcon />}
+				buttonText="Learn how to make your own compost box!"
+				link="https://sosfuture.org/blogs/news/how-to-compost-at-home?gclid=Cj0KCQjwi46iBhDyARIsAE3nVrZlNS5e-MgWu7Ny8eogOn8V0Y3g2MleeU6Rpl4QCWxaoOJHK0mLF78aAlGqEALw_wcB"></FlipCard>
 			<FlipCard 
 				title="recycle"
-				description="Compost is decayed organic material used as plant fertilizer."
-				bullet1 = "lalallalllalalalaallalalal"
-				bullet2 = "lalallalalallalalallalalal"
-				bullet3 = "lalallalaallalallalalalala"
-				icon={<RecycleIcon />}></FlipCard>
+				description="By recycling we can turn waste into reusable material. Some reminders:"
+				bullet1 = "paper, plastic, and glass are recyclable"
+				bullet2 = "rinse liquid before recycling a container"
+				bullet3 = "recyclable material must be bigger than a yogurt lid (about 2 inches)"
+				icon={<RecycleIcon />}
+				buttonText="Find recycling centers near you!"
+				link="https://www.epa.gov/recycle"
+				></FlipCard>
+				
 			<FlipCard 
 				title="waste"
-				description="Compost is decayed organic material used as plant fertilizer."
-				bullet1 = "lalallalllalalalalalalalla"
-				bullet2 = "lalallalalallalalalalalall"
-				bullet3 = "lalallalaallalalalalallala"
-				icon={<WasteIcon />}></FlipCard>
+				description="Make sure to throw your trash away so it doesn't end up in the ocean!"
+				bullet1 = "make sure to pick up after yourself when you are outside"
+				bullet2 = "trash will never be used again for any other purpose"
+				bullet3 = "waste can include broken dishes, wrappers, plastic utensils, styrofoam, etc"
+				icon={<WasteIcon />}
+				buttonText="Help clean up waste in your community!"
+				link="https://www.nationalcleanupday.org/?gclid=Cj0KCQjwi46iBhDyARIsAE3nVrY-EmpT1OyLf1x2FeJVawrMn1AcWMqlri7_jHnFTfI0xSiX04UZ-DQaAoEREALw_wcB">
+				</FlipCard>
+				
 				
 		</div>
 	);
