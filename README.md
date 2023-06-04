@@ -10,3 +10,4 @@ Links
   - Our submission: https://devpost.com/software/green-guide?ref_content=my-projects-tab&ref_feature=my_projects
 - Schedule: https://drive.google.com/file/d/19SkvmeW-6Ld_G_RcMjpDGc_YBhH71bmc/view?usp=sharing
 - Table assignment: https://docs.google.com/spreadsheets/d/14n3z3UEu1yAdddibXZOBGXFf7hvzKwmYlSYuksGKj1o/edit?usp=sharing
+- Photos: https://drive.google.com/drive/folders/1a5xka4qs0-2Ez2zqh0QfDGfoZUdYLsys?usp=share_link
