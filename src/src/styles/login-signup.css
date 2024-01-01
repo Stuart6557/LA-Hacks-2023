@@ -16,9 +16,8 @@
   width: 35%;
   box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
   padding-top: 30px;
-  border-radius: 60px; 
+  border-radius: 60px;
   background-color: white;
-
 }
 
 .imgs {
@@ -28,7 +27,7 @@
 }
 
 .container-image {
-  background-color: #91ac43; 
+  background-color: #91ac43;
   border-radius: 150px;
   align-items: center;
   display: flex;
@@ -41,7 +40,7 @@
   height: 100px;
   width: 100px;
   border-radius: 150px;
-} 
+}
 
 input {
   width: 300px;
@@ -62,7 +61,6 @@ input {
 .name {
   padding-left: 70px;
   font-size: 15px;
- 
 }
 
 .second-input {
@@ -97,4 +95,3 @@ a {
 .form button:hover {
   background-color: var(--light-green);
 }
-

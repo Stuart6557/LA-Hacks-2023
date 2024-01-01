@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import { useAuth } from "../contexts/AuthContext";
-  
+
 export default function Navbar() {
   const { currentUser } = useAuth();
 
@@ -16,28 +16,31 @@ export default function Navbar() {
           <Link to="/">
             <h4>Home</h4>
           </Link>
-          {currentUser == null ? 
-            <></> :
+          {currentUser == null ? (
+            <></>
+          ) : (
             <Link to="/game">
               <h4>Mini Game</h4>
             </Link>
-          }
-          {currentUser == null ? 
-            <></> :
+          )}
+          {currentUser == null ? (
+            <></>
+          ) : (
             <Link to="/tracker">
               <h4>Tracker</h4>
             </Link>
-          }
-          {currentUser == null ? 
+          )}
+          {currentUser == null ? (
             <Link to="/login">
               <h4>Login / Sign Up</h4>
-            </Link> :
+            </Link>
+          ) : (
             <Link to="/profile">
               <h4>Profile</h4>
             </Link>
-          }
+          )}
         </nav>
       </div>
     </header>
   );
-};
+}
