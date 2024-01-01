@@ -4,9 +4,9 @@ import "../styles/login-signup.css";
 import TrackerCircle from "../components/TrackerCircle";
 
 export default function Tracker() {
-	return (
-        <div style={{ backgroundImage: `url(${background})` }}>
-           <TrackerCircle />
-        </div>
-	);
+  return (
+    <div style={{ backgroundImage: `url(${background})` }}>
+      <TrackerCircle />
+    </div>
+  );
 }

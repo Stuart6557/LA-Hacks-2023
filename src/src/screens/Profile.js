@@ -9,15 +9,17 @@ export default function Profile() {
   const handleSubmit = async (e) => {
     const user = await auth.logout();
     return user;
-  }
+  };
 
-	return (
-		<div className="profile-screen">
+  return (
+    <div className="profile-screen">
       <div className="profile-card">
         <h3>Account Details</h3>
         <p>{currentUser && `Email: ${currentUser.email}`}</p>
-        <Link to='/'><button onClick={handleSubmit}>Log Out</button></Link>
+        <Link to="/">
+          <button onClick={handleSubmit}>Log Out</button>
+        </Link>
       </div>
     </div>
-	);
+  );
 }
